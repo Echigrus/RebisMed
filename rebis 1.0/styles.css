@@ -1,0 +1,167 @@
+body {
+	width: 1600px;
+	height:100%;
+	margin: 0 auto;
+}
+
+.navbar {
+	top: 40px;
+	background: #C4C4C4;
+	height: 100px;
+	padding: 0;
+}
+
+.logo-block {
+	width: 300px;
+	height: 100px;
+	background: #828282;
+}
+
+.navbar-brand {
+	padding:0;
+}
+
+.logo {
+	width: 300px;
+	margin: auto;
+	font-family: Maven Pro;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 72px;
+	line-height: 113px;
+	color: #27AE60;
+	text-align: center;
+}
+
+.form-inline#search {
+	position: absolute;
+	width: 1300px;
+	height: 60px;
+	left: 340px;
+}
+
+.form-control#search {
+	min-width: 800px;
+	margin-right: 20px;
+}
+
+.cart-contacts {
+	margin-left: 40px;
+}
+
+.form-inline a {
+	margin-left: 20px;
+}
+
+.central-container {
+	position: absolute;
+	top: 180px;
+}
+
+.categories {
+	width: 300px;
+	height: 245px;
+	background: #828282;
+}
+
+.news-block {
+	position: absolute;
+	width: 300px;
+	height: 443px;
+	top: 285px;
+	background: #C4C4C4;
+}
+
+.item-list {
+	position: absolute;
+	width: 1260px;
+	min-height: 728px;
+	top: 0;
+	left: 340px;
+	background: #E0E0E0;
+}
+
+.searched {
+	position: absolute;
+	width: 640px;
+	height: 48px;
+	left: 20px;
+	top: 20px;
+	background: #BDBDBD;
+	padding-left: 20px;
+	padding-top: 8px;
+}
+
+.sorting {
+	position: absolute;
+	width: 370px;
+	height: 48px;
+	top: 20px;
+	left: 870px;
+}
+
+#sortBtn {
+	margin-left:20px;
+}
+
+.goods {
+	position: absolute;
+	width: 1220px;
+	height: 40px;
+	top: 88px;
+	left: 20px;
+}
+
+.items {
+	padding-left: 10px;
+	padding-right: 20px;
+	padding-top: 88px;
+	padding-bottom: 20px;
+}
+
+.row#catalogue {
+	margin: 0;
+	margin-top: 20px;
+}
+
+.col-4 {
+	padding: 0;
+}
+
+.card {
+	width: 400px;
+	height: 350px;
+	margin-left: 10px;
+}
+
+.card img {
+	margin-left: 110px;
+	margin-right: 110px;
+	width: 180px;
+	height: 180px;
+}
+
+.card-deck {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.confBox {
+	width: 540px;
+	height: 60px;
+	background: #828282;
+	float: right;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px;
+}
+
+.footer {
+	position: absolute;
+	top: 1060px;
+	width: 1600px;
+	height: 50px;
+	background: #C4C4C4;
+}
