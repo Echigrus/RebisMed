@@ -27,6 +27,9 @@
 		if($row['num'] > 0){
 			$error = true;
 		}
+		if(empty($username) || empty($password)){
+			$error = true;
+		}
 		if($error == false){
 			$passwordHash = password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
 			
@@ -47,7 +50,7 @@
 			}
 		}
 		else {
-			$message = "Данный логин занят";
+			$message = "Неподходящий логин";
 			echo "<script> alert('$message');</script>";
 		}
 	}
