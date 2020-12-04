@@ -19,19 +19,24 @@
 			if($_SESSION['initB'] == false) $_SESSION['prev'] = "";
 			$_SESSION['initA'] = true;
 			$_SESSION['numA'] = 0;
+			$_SESSION['out'] = $_SESSION['numA'];
 		}
-		if($_SESSION['numA'] - floor($_SESSION['numA']) == 0.0 && $_SESSION['comma'] == false){
+		if(strlen(explode('.', $_SESSION['out'])[1]) == 0 && $_SESSION['comma'] == false){
 			$_SESSION['numA'] *= 10;
 			if($_SESSION['numA'] >= 0.0) $_SESSION['numA'] += $t;
 			else $_SESSION['numA'] -= $t;
 			$_SESSION['out'] = (string) $_SESSION['numA'];
 		}
 		else {
-			$power = strlen(explode('.', $_SESSION['out'])[1]);
-			if($_SESSION['numA'] >= 0.0) $_SESSION['numA'] += $t /(pow(10, $power+1));
-			else $_SESSION['numA'] -= $t/(pow(10, $power+1));
-			$_SESSION['out'] = (string) $_SESSION['numA'];
-			if($t == 0) $_SESSION['out'] = $_SESSION['out'] . "0"; 
+			if($t == 0) {
+				$_SESSION['out'] = $_SESSION['out'] . "0";
+			}
+			else {
+				$power = strlen(explode('.', $_SESSION['out'])[1]);
+				if($_SESSION['numA'] >= 0.0) $_SESSION['numA'] += $t /(pow(10, $power+1));
+				else $_SESSION['numA'] -= $t/(pow(10, $power+1));
+				$_SESSION['out'] = (string) $_SESSION['numA'];
+			} 
 			$_SESSION['comma'] = false;
 		} 
 	}
